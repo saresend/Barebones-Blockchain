@@ -1,6 +1,6 @@
 import time
 import hashlib
-
+import socket
 
 
 
@@ -91,14 +91,3 @@ class Chain(object):
         
         for val in self.blockChain:
             yield val
-
-
-
-
-class Servo(object):
-    
-    """ A small class to wrap the server running the server for the blockchain """
-
-    def __init__(self, http_port=3551, p2p_port=3731):
-        
-        
